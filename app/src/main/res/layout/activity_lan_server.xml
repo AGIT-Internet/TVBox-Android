@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:focusable="true"
+    android:scrollbars="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/vs_60"
+    android:paddingTop="@dimen/vs_35"
+    android:paddingRight="@dimen/vs_60"
+    android:paddingBottom="@dimen/vs_35">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vs_60"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvLanBack"
+            android:layout_width="@dimen/vs_80"
+            android:layout_height="@dimen/vs_45"
+            android:background="@drawable/shape_setting_model_focus"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/ts_22" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/vs_24"
+            android:layout_marginStart="@dimen/vs_24"
+            android:text="局域网服务器"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/ts_30"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vs_15"
+        android:layout_marginBottom="@dimen/vs_20"
+        android:text="开启后，同一局域网内的电脑、电视和平板可通过浏览器访问本机。"
+        android:textColor="@color/color_BBFFFFFF"
+        android:textSize="@dimen/ts_20" />
+
+    <LinearLayout
+        android:id="@+id/llLanToggle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vs_70"
+        android:layout_marginBottom="@dimen/vs_12"
+        android:background="@drawable/shape_setting_model_focus"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/vs_24"
+        android:paddingRight="@dimen/vs_24">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服务状态"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/ts_24" />
+
+            <TextView
+                android:id="@+id/tvLanStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已关闭"
+                android:textColor="@color/color_BBFFFFFF"
+                android:textSize="@dimen/ts_18" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvLanAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启服务"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/ts_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llLanAddress"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vs_70"
+        android:layout_marginBottom="@dimen/vs_12"
+        android:background="@drawable/shape_setting_model_focus"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/vs_24"
+        android:paddingRight="@dimen/vs_24">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="访问地址"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/ts_24" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tvLanAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未连接局域网"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/ts_22" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/vs_15"
+            android:layout_marginStart="@dimen/vs_15"
+            android:text="复制"
+            android:textColor="@color/color_BBFFFFFF"
+            android:textSize="@dimen/ts_18" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vs_60"
+        android:layout_marginBottom="@dimen/vs_12"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/vs_24"
+        android:paddingRight="@dimen/vs_24">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务端口"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/ts_24" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9979"
+            android:textColor="@color/color_BBFFFFFF"
+            android:textSize="@dimen/ts_22" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/vs_12"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/vs_24"
+        android:paddingTop="@dimen/vs_12"
+        android:paddingRight="@dimen/vs_24"
+        android:paddingBottom="@dimen/vs_12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="后台保活诊断"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/ts_24" />
+
+        <TextView
+            android:id="@+id/tvLanKeepAlive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/vs_8"
+            android:lineSpacingExtra="@dimen/vs_4"
+            android:text="前台服务：未运行"
+            android:textColor="@color/color_BBFFFFFF"
+            android:textSize="@dimen/ts_18" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llLanSecurity"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vs_70"
+        android:layout_marginBottom="@dimen/vs_12"
+        android:background="@drawable/shape_setting_model_focus"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/vs_24"
+        android:paddingRight="@dimen/vs_24">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="访问安全"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/ts_24" />
+
+        <TextView
+            android:id="@+id/tvLanSecurity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未开启"
+            android:textColor="@color/color_BBFFFFFF"
+            android:textSize="@dimen/ts_22" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llLanPairCode"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vs_70"
+        android:layout_marginBottom="@dimen/vs_12"
+        android:background="@drawable/shape_setting_model_focus"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/vs_24"
+        android:paddingRight="@dimen/vs_24">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="配对码（刷新会注销全部设备）"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/ts_24" />
+
+        <TextView
+            android:id="@+id/tvLanPairCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启访问安全后显示"
+            android:textColor="@color/color_BBFFFFFF"
+            android:textSize="@dimen/ts_22" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvLanPairExpiry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/vs_8"
+        android:gravity="right"
+        android:textColor="@color/color_BBFFFFFF"
+        android:textSize="@dimen/ts_16" />
+
+    <LinearLayout
+        android:id="@+id/llLanDevices"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vs_60"
+        android:layout_marginBottom="@dimen/vs_12"
+        android:background="@drawable/shape_setting_model_focus"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/vs_24"
+        android:paddingRight="@dimen/vs_24">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="已配对设备"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/ts_24" />
+
+        <TextView
+            android:id="@+id/tvLanDeviceCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 台"
+            android:textColor="@color/color_BBFFFFFF"
+            android:textSize="@dimen/ts_20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llLanRevokeDevices"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vs_60"
+        android:layout_marginBottom="@dimen/vs_12"
+        android:background="@drawable/shape_setting_model_focus"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注销全部配对设备"
+            android:textColor="#FFFF7777"
+            android:textSize="@dimen/ts_22" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llLanOpen"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vs_60"
+        android:background="@drawable/shape_setting_model_focus"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="在浏览器中打开"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/ts_24" />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

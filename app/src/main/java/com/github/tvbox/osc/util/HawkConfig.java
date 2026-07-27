@@ -63,5 +63,13 @@ public class HawkConfig {
     public static final String DANMU_SIZE_SCALE = "danmu_size_scale";
     public static final String DANMU_RANDOM_COLOR = "danmu_random_color";
     public static final String DANMU_API = "danmu_api";
+    public static final String LAN_SERVER_ENABLED = "lan_server_enabled";
+    public static final String LAN_SERVER_SECURE = "lan_server_secure";
+    public static final String LAN_SERVER_TOKEN = "lan_server_token";
+    public static final String LAN_SERVER_PAIR_CODE = "lan_server_pair_code";
+    public static final String LAN_LIVE_FAVORITES = "lan_live_favorites";
+    public static final String LAN_LIVE_RECENTS = "lan_live_recents";
+    public static final String LAN_LIVE_GROUP = "lan_live_group";
+    public static final String LAN_LIVE_SOURCE = "lan_live_source";
     public static boolean hotVodDelete;
 }

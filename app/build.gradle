@@ -201,4 +201,3 @@ dependencies {
     implementation ('org.chromium.net:cronet-embedded:101.4951.41')
     implementation 'org.brotli:dec:0.1.2'
 }
-

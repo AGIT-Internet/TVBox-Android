@@ -1,0 +1,28 @@
+# IDE and local machine configuration
+.idea/
+.vscode/
+*.iml
+local.properties
+
+# Gradle and Android build output
+.gradle/
+**/build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Signing keys and generated packages
+*.jks
+*.keystore
+*.apk
+*.aab
+*.ap_
+*.idsig
+
+# Native build intermediates and logs
+*.hprof
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

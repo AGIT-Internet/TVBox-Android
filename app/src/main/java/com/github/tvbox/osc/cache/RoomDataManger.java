@@ -53,7 +53,7 @@ public class RoomDataManger {
         }
         record.sourceKey = sourceKey;
         record.vodId = vodInfo.id;
-        record.updateTime = System.currentTimeMillis();
+        record.updateTime = Math.max(System.currentTimeMillis(), record.updateTime + 1);
         record.dataJson = getVodInfoGson().toJson(vodInfo);
         AppDataManager.get().getVodRecordDao().insert(record);
     }
@@ -72,6 +72,11 @@ public class RoomDataManger {
             e.printStackTrace();
         }
         return null;
+    }
+
+    public static long getVodRecordUpdateTime(String sourceKey, String vodId) {
+        VodRecord record = AppDataManager.get().getVodRecordDao().getVodRecord(sourceKey, vodId);
+        return record == null ? 0L : record.updateTime;
     }
 
     public static void deleteVodRecord(String sourceKey, VodInfo vodInfo) {
